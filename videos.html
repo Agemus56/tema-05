@@ -18,10 +18,69 @@
         </ul>
     </nav>
     <hr>
-    <div class="contenido">
-        
+    <div class="container">
+        <h1>VIDEOS</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="feature-img">
+                        <img src="SRC/imagenes/logo.png" width="100%">
+                        <img src="SRC/imagenes/play.png"class="play-btn" onclick="playVideo('SRC/videos/video 01.mp4')">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="SRC/imagenes/logo.png" alt="">
+                            <img src="SRC/imagenes/play.png"class="play-btn" onclick="playVideo('SRC/videos/video 02.mp4')">
+    
+                        </div>
+                        <p>How to add Multiple videos in a website or <br> to make a video gallery</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="SRC/imagenes/logo.png" alt="">
+                            <img src="SRC/imagenes/play.png"class="play-btn" onclick="playVideo('SRC/videos/video 03.mp4')">
+    
+                        </div>
+                        <p>How to add Multiple videos in a website or <br> to make a video gallery</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="SRC/imagenes/logo.png" alt="">
+                            <img src="SRC/imagenes/play.png"class="play-btn" onclick="playVideo('SRC/videos/video 04.mp4')">
+    
+                        </div>
+                        <p>How to add Multiple videos in a website or <br> to make a video gallery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="video-player" id="videoplayer">
+        <video  width="100%" controls autoplay id="myvideo">
+
+            <source src="SRC/videos/video 01.mp4" type="video/mp4" >
+        </video>
+        <img src="SRC/imagenes/close.png" class="close-btn" onclick="stopbtn()">
+    </div>
+
     <hr>
+
+    <script>
+
+        var videoplayer = document.getElementById("videoplayer");
+        var myvideo = document.getElementById("myvideo");
+        
+        function stopbtn(){
+            videoplayer.style.display = "none";
+        }
+        function playVideo(file){
+        myvideo.src = file;
+        videoplayer.style.display = "block";
+        }
+        
+        </script>
+        
     <footer>
         <hr>
         <div class="pie">
