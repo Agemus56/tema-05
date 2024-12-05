@@ -10,6 +10,10 @@ body {
 hr {
     margin: 25px 0;
 }
+img. {
+    width: 100%;
+    object-fit: cover;
+}
 /*estilos del menu*/
 .menu-nav {
     display: flex;
@@ -90,4 +94,16 @@ hr {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+}
+/*galeria*/
+.gallery__container {
+    width: 90%;
+    max-width: 1100%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 40px;
+}
+.gallery__container img {
+    height: 100%;
 }
