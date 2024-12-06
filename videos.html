@@ -57,8 +57,7 @@
         </div>
     </div>
     <div class="video-player" id="videoplayer">
-        <video  width="100%" controls autoplay id="myvideo">
-
+        <video controls autoplay id="myvideo">
             <source src="SRC/videos/video 01.mp4" type="video/mp4" >
         </video>
         <img src="SRC/imagenes/close.png" class="close-btn" onclick="stopbtn()">
@@ -75,8 +74,8 @@
             videoplayer.style.display = "none";
         }
         function playVideo(file){
-        myvideo.src = file;
-        videoplayer.style.display = "block";
+            myvideo.src = file;
+            videoplayer.style.display = "block";
         }
         
         </script>
